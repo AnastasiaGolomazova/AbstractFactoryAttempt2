@@ -1,8 +1,8 @@
 #ifndef PRODUCTCLASS_H
 #define PRODUCTCLASS_H
-#include "abstractproduct.h"
 
-class ProductClass : public AbstractProduct
+
+class ProductClass
 {
 public:
     ProductClass();

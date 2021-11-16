@@ -15,11 +15,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        abstractfactory.cpp \
-        abstractproduct.cpp \
+        abstractfactorybase.cpp \
         factorycpp.cpp \
         factorycsharp.cpp \
         factoryjava.cpp \
+        languageconst.cpp \
         main.cpp \
         productclass.cpp \
         productmethod.cpp \
@@ -31,11 +31,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    abstractfactory.h \
-    abstractproduct.h \
+    abstractfactorybase.h \
     factorycpp.h \
     factorycsharp.h \
     factoryjava.h \
+    languageconst.h \
     productclass.h \
     productmethod.h \
     productprint.h

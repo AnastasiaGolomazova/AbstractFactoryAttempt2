@@ -1,8 +1,8 @@
 #ifndef PRODUCTPRINT_H
 #define PRODUCTPRINT_H
-#include "abstractproduct.h"
 
-class ProductPrint : public AbstractProduct
+
+class ProductPrint
 {
 public:
     ProductPrint();

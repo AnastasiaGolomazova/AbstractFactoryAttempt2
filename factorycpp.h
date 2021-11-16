@@ -1,7 +1,7 @@
 #ifndef FACTORYCPP_H
 #define FACTORYCPP_H
 
-#include "abstractfactory.h"
+#include "abstractfactorybase.h"
 
 
 class FactoryCPP : public AbstractFactory

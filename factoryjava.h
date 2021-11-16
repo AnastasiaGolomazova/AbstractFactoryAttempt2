@@ -1,7 +1,7 @@
 #ifndef FACTORYJAVA_H
 #define FACTORYJAVA_H
 
-#include "abstractfactory.h"
+#include "abstractfactorybase.h"
 
 
 class FactoryJava : public AbstractFactory
