@@ -8,4 +8,4 @@ public:
     ProductPrint();
 };
 
-#endif // PRODUCTPRINT_H
+#endif

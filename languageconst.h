@@ -1,11 +1,20 @@
 #ifndef LANGUAGECONST_H
 #define LANGUAGECONST_H
 
+#include <string>
+#include <vector>
+#include <memory>
 
-class LanguageConst
-{
+using namespace std;
+
+class LanguageConst {
 public:
-    LanguageConst();
+    using Flags = unsigned int;
+    virtual ~LanguageConst() = default;
+    virtual string CodeGeneration(unsigned int level = 0) const = 0;
+protected:
+    virtual string GenerateIndent(unsigned int level) const;
 };
 
-#endif // LANGUAGECONST_H
+#endif
+

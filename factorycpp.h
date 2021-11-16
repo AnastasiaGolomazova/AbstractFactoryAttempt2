@@ -10,4 +10,4 @@ public:
     FactoryCPP();
 };
 
-#endif // FACTORYCPP_H
+#endif

@@ -10,4 +10,4 @@ public:
     FactoryCSharp();
 };
 
-#endif // FACTORYCSHARP_H
+#endif

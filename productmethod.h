@@ -7,4 +7,4 @@ public:
     ProductMethod();
 };
 
-#endif // PRODUCTMETHOD_H
+#endif

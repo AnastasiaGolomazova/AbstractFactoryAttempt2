@@ -8,4 +8,4 @@ public:
     ProductClass();
 };
 
-#endif // PRODUCTCLASS_H
+#endif

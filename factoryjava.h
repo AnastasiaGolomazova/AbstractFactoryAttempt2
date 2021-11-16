@@ -10,4 +10,4 @@ public:
     FactoryJava();
 };
 
-#endif // FACTORYJAVA_H
+#endif
