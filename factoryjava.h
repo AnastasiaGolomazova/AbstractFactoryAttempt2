@@ -2,12 +2,10 @@
 #define FACTORYJAVA_H
 
 #include "abstractfactorybase.h"
+#include"abstractfactorybase.h"
 
-
-class FactoryJava : public AbstractFactory
-{
-public:
-    FactoryJava();
-};
+namespace Java {
+#include"languagefactorytemplate.h"
+}
 
 #endif

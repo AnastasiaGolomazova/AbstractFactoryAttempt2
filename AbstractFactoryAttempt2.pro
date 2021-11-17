@@ -16,14 +16,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         abstractfactorybase.cpp \
+        classcpp.cpp \
+        classcsharp.cpp \
+        classjava.cpp \
+        classunit.cpp \
         factorycpp.cpp \
         factorycsharp.cpp \
         factoryjava.cpp \
         languageconst.cpp \
+        languagefactory.cpp \
+        languagefactorytemplate.cpp \
         main.cpp \
-        productclass.cpp \
-        productmethod.cpp \
-        productprint.cpp
+        methodcpp.cpp \
+        methodcsharp.cpp \
+        methodjava.cpp \
+        methodunit.cpp \
+        printcpp.cpp \
+        printcsharp.cpp \
+        printjava.cpp \
+        printunit.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -32,10 +43,21 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     abstractfactorybase.h \
+    classcpp.h \
+    classcsharp.h \
+    classjava.h \
+    classunit.h \
     factorycpp.h \
     factorycsharp.h \
     factoryjava.h \
     languageconst.h \
-    productclass.h \
-    productmethod.h \
-    productprint.h
+    languagefactory.h \
+    languagefactorytemplate.h \
+    methodcpp.h \
+    methodcsharp.h \
+    methodjava.h \
+    methodunit.h \
+    printcpp.h \
+    printcsharp.h \
+    printjava.h \
+    printunit.h

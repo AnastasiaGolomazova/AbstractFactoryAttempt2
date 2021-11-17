@@ -2,12 +2,10 @@
 #define FACTORYCSHARP_H
 
 #include "abstractfactorybase.h"
+#include"abstractfactorybase.h"
 
-
-class FactoryCSharp : public AbstractFactory
-{
-public:
-    FactoryCSharp();
-};
+namespace Csharp {
+#include"languagefactorytemplate.h"
+}
 
 #endif

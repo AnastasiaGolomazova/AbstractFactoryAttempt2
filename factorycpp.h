@@ -2,12 +2,10 @@
 #define FACTORYCPP_H
 
 #include "abstractfactorybase.h"
+#include"abstractfactorybase.h"
 
-
-class FactoryCPP : public AbstractFactory
-{
-public:
-    FactoryCPP();
-};
+namespace Cpp {
+#include"languagefactorytemplate.h"
+}
 
 #endif
