@@ -2,10 +2,14 @@
 #define PRINTCPP_H
 
 
-class PrintCpp
+#include "printunit.h"
+
+class PrintCpp : public PrintUnit
 {
 public:
-    PrintCpp();
+    explicit PrintCpp(const string &text): PrintUnit(text){}
+
+    string CodeGeneration(unsigned int level) const;
 };
 
 #endif

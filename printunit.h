@@ -1,10 +1,15 @@
 #ifndef PRINTUNIT_H
 #define PRINTUNIT_H
 
-class PrintUnit
+#include "languageconst.h"
+
+class PrintUnit : public LanguageConst
 {
 public:
-    PrintUnit();
+    explicit PrintUnit(const string &textM): text(textM){}
+    virtual ~PrintUnit() = default;
+protected:
+    string text;
 };
 
 #endif

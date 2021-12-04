@@ -13,7 +13,7 @@ public:
     };
 
 public:
-    MethodUnit(const string &nameM, const string &returnTypeM, Flags flagsM): name(nameM), return_type(returnTypeM), flags(flagsM){}
+    MethodUnit(const string &nameM, const string &returnTypeM, Flags flagsM): name(nameM), returnType(returnTypeM), flags(flagsM){}
     virtual ~MethodUnit() = default;
     void Add(const shared_ptr<LanguageConst> &languageConst, Flags /* flags */ = 0 );
 

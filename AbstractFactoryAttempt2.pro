@@ -19,7 +19,6 @@ SOURCES += \
         classcpp.cpp \
         classcsharp.cpp \
         classjava.cpp \
-        classunit.cpp \
         factorycpp.cpp \
         factorycsharp.cpp \
         factoryjava.cpp \
@@ -30,11 +29,9 @@ SOURCES += \
         methodcpp.cpp \
         methodcsharp.cpp \
         methodjava.cpp \
-        methodunit.cpp \
         printcpp.cpp \
         printcsharp.cpp \
-        printjava.cpp \
-        printunit.cpp
+        printjava.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

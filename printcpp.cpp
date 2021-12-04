@@ -1,6 +1,5 @@
 #include "printcpp.h"
 
-PrintCpp::PrintCpp()
-{
-
+string PrintCpp::CodeGeneration(unsigned int level = 0) const{
+    return GenerateIndent(level) + "std::cout << \"" + text + "\" << std::endl;\n";
 }
