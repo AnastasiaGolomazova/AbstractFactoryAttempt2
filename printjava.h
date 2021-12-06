@@ -1,11 +1,12 @@
 #ifndef PRINTJAVA_H
 #define PRINTJAVA_H
 
+#include "printunit.h"
 
-class PrintJava
-{
+class PrintJava : public PrintUnit{
 public:
-    PrintJava();
+    explicit PrintJava(const string &text): PrintUnit(text){}
+    string CodeGeneration(unsigned int level) const;
 };
 
 #endif

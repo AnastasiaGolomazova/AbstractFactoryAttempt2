@@ -4,8 +4,7 @@ string MethodCpp::CodeGeneration(unsigned int level = 0) const{
     string result = GenerateIndent(level);
     if (flags & STATIC){
         result += "static ";
-    }
-    else if (flags & VIRTUAL) {
+    }else if (flags & VIRTUAL) {
         result += "virtual ";
     }
     result += returnType + " ";

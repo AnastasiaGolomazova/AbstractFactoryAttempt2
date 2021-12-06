@@ -1,6 +1,5 @@
 #include "printcsharp.h"
 
-PrintCSharp::PrintCSharp()
-{
-
+string PrintCsharp::CodeGeneration(unsigned int level = 0) const{
+    return GenerateIndent(level) + "Console.WriteLine(\"" + text + "\");\n";
 }

@@ -1,11 +1,15 @@
 #ifndef METHODJAVA_H
 #define METHODJAVA_H
 
+#include "methodunit.h"
 
-class MethodJava
+class MethodJava: public MethodUnit
 {
 public:
-    MethodJava();
+    MethodJava(const string &name, const string &returnType, Flags flags): MethodUnit(name, returnType, flags){}
+    string CodeGeneration(unsigned int level) const;
+
 };
 
 #endif
+

@@ -2,10 +2,13 @@
 #define METHODCSHARP_H
 
 
-class MethodCSharp
+#include "methodunit.h"
+
+class MethodCsharp : public MethodUnit
 {
 public:
-    MethodCSharp();
+   MethodCsharp(const string &name, const string &returnType, Flags flags): MethodUnit(name, returnType, flags){}
+    string CodeGeneration(unsigned int level) const;
 };
 
 #endif
