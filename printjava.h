@@ -5,8 +5,8 @@
 
 class PrintJava : public PrintUnit{
 public:
-    explicit PrintJava(const string &text): PrintUnit(text){}
-    string CodeGeneration(unsigned int level) const;
+    explicit PrintJava(const std::string &text): PrintUnit(text){}
+    std::string CodeGeneration(unsigned int level) const;
 };
 
 #endif

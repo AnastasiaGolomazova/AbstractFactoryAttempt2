@@ -6,9 +6,8 @@
 class PrintCsharp : public PrintUnit
 {
 public:
-    explicit PrintCsharp(const string &text): PrintUnit(text){}
-
-    string CodeGeneration(unsigned int level) const;
+    explicit PrintCsharp(const std::string &text): PrintUnit(text){}
+    std::string CodeGeneration(unsigned int level) const;
 };
 
 #endif

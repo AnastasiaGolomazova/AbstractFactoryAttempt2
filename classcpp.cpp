@@ -1,5 +1,7 @@
 #include "classcpp.h"
 
+using namespace std;
+
 void ClassCpp::Add(const shared_ptr<LanguageConst> &unit, Flags flags){
     if (unit == nullptr){
         throw 1;
@@ -26,3 +28,5 @@ string ClassCpp::CodeGeneration(unsigned int level = 0) const{
     result += GenerateIndent(level) + "};\n";
     return result;
 }
+
+const vector<string> ClassCpp::ACCESS_MODIFIERS = { "public", "protected", "private" };

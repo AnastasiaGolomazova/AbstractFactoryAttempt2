@@ -23,7 +23,6 @@ SOURCES += \
         factoryjava.cpp \
         languageconst.cpp \
         languagefactory.cpp \
-        languagefactorytemplate.cpp \
         main.cpp \
         methodcpp.cpp \
         methodcsharp.cpp \

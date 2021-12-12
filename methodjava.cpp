@@ -1,5 +1,5 @@
 #include "methodjava.h"
-
+using namespace std;
 string MethodJava::CodeGeneration(unsigned int level = 0) const{
     string result = "";
     if (flags & STATIC){

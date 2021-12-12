@@ -1,5 +1,7 @@
 #include "classcsharp.h"
 
+using namespace std;
+
 void ClassCsharp::Add(const shared_ptr<ClassUnit> &unit, Flags flags = 0){
     if (unit == nullptr){
         throw 1;
@@ -20,3 +22,4 @@ string ClassCsharp::CodeGeneration(unsigned int level = 0) const{
     result += GenerateIndent(level) + "};\n";
     return result;
 }
+const vector<string> ClassCsharp::ACCESS_MODIFIERS = { "public", "protected", "private", "internal", "protected internal", "private protected" };

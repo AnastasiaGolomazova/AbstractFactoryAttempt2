@@ -1,5 +1,7 @@
 #include "classjava.h"
 
+using namespace std;
+
 void ClassJava::Add(const shared_ptr<ClassUnit> &unit, Flags flags = 0){
     if (unit == nullptr){
         throw 1;
@@ -22,3 +24,5 @@ string ClassJava::CodeGeneration(unsigned int level = 0) const
     result += GenerateIndent(level) + "};\n";
     return result;
 }
+
+const vector<string> ClassJava::ACCESS_MODIFIERS = { "public", "protected", "private" };

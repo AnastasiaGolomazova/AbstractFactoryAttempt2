@@ -1,5 +1,5 @@
 #include "methodcsharp.h"
-
+using namespace std;
 string MethodCsharp::CodeGeneration(unsigned int level = 0) const{
     string result = "";
     if (flags & STATIC){

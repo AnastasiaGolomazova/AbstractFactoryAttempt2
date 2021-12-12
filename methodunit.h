@@ -13,15 +13,15 @@ public:
     };
 
 public:
-    MethodUnit(const string &nameM, const string &returnTypeM, Flags flagsM): name(nameM), returnType(returnTypeM), flags(flagsM){}
+    MethodUnit(const std::string &nameM, const std::string &returnTypeM, Flags flagsM): name(nameM), returnType(returnTypeM), flags(flagsM){}
     virtual ~MethodUnit() = default;
-    void Add(const shared_ptr<LanguageConst> &languageConst, Flags /* flags */ = 0 );
+    void Add(const std::shared_ptr<LanguageConst> &languageConst, Flags /* flags */ = 0 );
 
 protected:
-    string name;
-    string returnType;
+    std::string name;
+    std::string returnType;
     Flags flags;
-    vector<shared_ptr<LanguageConst>> body;
+    std::vector<std::shared_ptr<LanguageConst>> body;
 };
 
 #endif

@@ -6,8 +6,8 @@
 class MethodJava: public MethodUnit
 {
 public:
-    MethodJava(const string &name, const string &returnType, Flags flags): MethodUnit(name, returnType, flags){}
-    string CodeGeneration(unsigned int level) const;
+    MethodJava(const std::string &name, const std::string &returnType, Flags flags): MethodUnit(name, returnType, flags){}
+    std::string CodeGeneration(unsigned int level) const;
 
 };
 

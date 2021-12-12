@@ -1,5 +1,5 @@
 #include "languageconst.h"
-
+using namespace std;
 string LanguageConst::GenerateIndent(unsigned int level) const {
     static const auto DEFAULT_INDENT = "    ";
     string result;

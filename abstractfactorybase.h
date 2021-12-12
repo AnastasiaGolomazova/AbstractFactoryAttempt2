@@ -10,15 +10,13 @@
 #include "printunit.h"
 #include "languageconst.h"
 
-using namespace std;
-
 class AbstractFactory
 {
 public:
     virtual ~AbstractFactory() = default;
-    virtual shared_ptr<ClassUnit> CreateProductClass(const string &name) const = 0;
-    virtual shared_ptr<MethodUnit> CreateProductMethod(const string &name, const string &returnType, LanguageConst::Flags flags) const = 0;
-    virtual shared_ptr<PrintUnit> CreateProductPrint(const string &name) const = 0;
+    virtual std::shared_ptr<ClassUnit> CreateProductClass(const std::string &name) const = 0;
+    virtual std::shared_ptr<MethodUnit> CreateProductMethod(const std::string &name, const std::string &returnType, LanguageConst::Flags flags) const = 0;
+    virtual std::shared_ptr<PrintUnit> CreateProductPrint(const std::string &name) const = 0;
 };
 
 #endif

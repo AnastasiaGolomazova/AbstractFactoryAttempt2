@@ -7,8 +7,8 @@
 class MethodCsharp : public MethodUnit
 {
 public:
-   MethodCsharp(const string &name, const string &returnType, Flags flags): MethodUnit(name, returnType, flags){}
-    string CodeGeneration(unsigned int level) const;
+   MethodCsharp(const std::string &name, const std::string &returnType, Flags flags): MethodUnit(name, returnType, flags){}
+    std::string CodeGeneration(unsigned int level) const;
 };
 
 #endif

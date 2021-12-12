@@ -1,5 +1,5 @@
 #include "methodcpp.h"
-
+using namespace std;
 string MethodCpp::CodeGeneration(unsigned int level = 0) const{
     string result = GenerateIndent(level);
     if (flags & STATIC){

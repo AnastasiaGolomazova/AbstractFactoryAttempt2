@@ -15,14 +15,14 @@ public:
     };
 
 public:
-    explicit ClassUnit(const string &name, size_t fieldsSize): name(name), fields(fieldsSize) {}
+    explicit ClassUnit(const std::string &name, size_t fieldsSize): name(name), fields(fieldsSize) {}
 
     virtual ~ClassUnit() = default;
 
 protected:
-    string name;
-    using Fields = vector<shared_ptr<LanguageConst>>;
-    vector<Fields> fields;
+    std::string name;
+    using Fields = std::vector<std::shared_ptr<LanguageConst>>;
+    std::vector<Fields> fields;
 };
 
 #endif
