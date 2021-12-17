@@ -8,3 +8,8 @@ string LanguageConst::GenerateIndent(unsigned int level) const {
     }
     return  result;
 }
+
+void LanguageConst:: Add(const std::shared_ptr<LanguageConst> & languageconst, Flags flags)
+{
+    throw std::runtime_error("This type of unit doesn't support the Add method.");
+}

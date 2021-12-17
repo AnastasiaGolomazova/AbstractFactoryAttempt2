@@ -4,7 +4,7 @@ using namespace std;
 
 void ClassCpp::Add(const shared_ptr<LanguageConst> &unit, Flags flags){
     if (unit == nullptr){
-        throw 1;
+        throw std::runtime_error("Unit is nullptr.");
     }
     size_t access_modifier = PRIVATE;
     if (flags < fields.size()){

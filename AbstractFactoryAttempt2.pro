@@ -27,6 +27,7 @@ SOURCES += \
         methodcpp.cpp \
         methodcsharp.cpp \
         methodjava.cpp \
+        methodunit.cpp \
         printcpp.cpp \
         printcsharp.cpp \
         printjava.cpp

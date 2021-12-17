@@ -15,7 +15,7 @@ public:
 public:
     MethodUnit(const std::string &nameM, const std::string &returnTypeM, Flags flagsM): name(nameM), returnType(returnTypeM), flags(flagsM){}
     virtual ~MethodUnit() = default;
-    void Add(const std::shared_ptr<LanguageConst> &languageConst, Flags /* flags */ = 0 );
+    virtual void Add(const std::shared_ptr<LanguageConst> &languageconst, Flags /* flags */ = 0 ) override;
 
 protected:
     std::string name;

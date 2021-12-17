@@ -10,7 +10,7 @@ public:
     static const std::vector<std::string> ACCESS_MODIFIERS;
 public:
     explicit ClassJava(const std::string &name): ClassUnit(name, ACCESS_MODIFIERS.size()){}
-    void Add(const std::shared_ptr<ClassUnit> &unit, Flags flags);
+    void Add(const std::shared_ptr<LanguageConst> &unit, Flags flags);
     std::string CodeGeneration(unsigned int level) const;
 };
 

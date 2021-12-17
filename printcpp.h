@@ -8,7 +8,7 @@ class PrintCpp : public PrintUnit
 {
 public:
     explicit PrintCpp(const std::string &text): PrintUnit(text){}
-    std::string CodeGeneration(unsigned int level) const;
+    virtual std::string CodeGeneration(unsigned int level) const override;
 };
 
 #endif

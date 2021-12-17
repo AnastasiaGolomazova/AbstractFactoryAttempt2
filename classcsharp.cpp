@@ -2,9 +2,9 @@
 
 using namespace std;
 
-void ClassCsharp::Add(const shared_ptr<ClassUnit> &unit, Flags flags = 0){
+void ClassCsharp::Add(const shared_ptr<LanguageConst> &unit, Flags flags = 0){
     if (unit == nullptr){
-        throw 1;
+        throw std::runtime_error("Unit is nullptr.");
     }
     size_t access_modifier = PRIVATE;
     if (flags < fields.size()){

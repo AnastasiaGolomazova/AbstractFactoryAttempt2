@@ -10,7 +10,7 @@ public:
 
 public:
     explicit ClassCsharp(const std::string &name): ClassUnit(name, ACCESS_MODIFIERS.size()){}
-    void Add(const std::shared_ptr<ClassUnit> &unit, Flags flags);
+    virtual void Add(const std::shared_ptr<LanguageConst> &unit, Flags flags) override;
     std::string CodeGeneration(unsigned int level) const;
 };
 

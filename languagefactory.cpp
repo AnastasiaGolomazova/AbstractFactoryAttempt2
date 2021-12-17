@@ -9,5 +9,5 @@ shared_ptr<AbstractFactory> SelectFactory(const string & name){
     auto it = factmap.find(name);
     if (it != factmap.end())
         return it->second;
-    throw 1;
+    throw std::runtime_error("Language is not supported.");
 }
